@@ -150,27 +150,27 @@ function toComment(sourceMap) {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-italic.eot Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-italic.eot";
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-regular.eot Unexpected character '\u0006' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-regular.eot";
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-semibold.eot Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-semibold.eot";
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-semibolditalic.eot Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-semibolditalic.eot";
 
 /***/ }),
 /* 5 */
@@ -5641,8 +5641,8 @@ function fromByteArray (uint8) {
 
 
 var base64 = __webpack_require__(10)
-var ieee754 = __webpack_require__(15)
-var isArray = __webpack_require__(16)
+var ieee754 = __webpack_require__(23)
+var isArray = __webpack_require__(24)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -7459,13 +7459,61 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(2) + ");\n    src: url(" + __webpack_require__(2) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(20) + ") format('woff'),\n         url(" + __webpack_require__(19) + ") format('truetype');\n    font-weight: normal;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(1) + ");\n    src: url(" + __webpack_require__(1) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(18) + ") format('woff'),\n         url(" + __webpack_require__(17) + ") format('truetype');\n    font-weight: normal;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(3) + ");\n    src: url(" + __webpack_require__(3) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(22) + ") format('woff'),\n         url(" + __webpack_require__(21) + ") format('truetype');\n    font-weight: 600;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(4) + ");\n    src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(24) + ") format('woff'),\n         url(" + __webpack_require__(23) + ") format('truetype');\n    font-weight: 600;\n    font-style: italic;\n}", ""]);
+exports.push([module.i, "@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(2) + ");\n    src: url(" + __webpack_require__(2) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(18) + ") format('woff'),\n         url(" + __webpack_require__(17) + ") format('truetype');\n    font-weight: normal;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(1) + ");\n    src: url(" + __webpack_require__(1) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(16) + ") format('woff'),\n         url(" + __webpack_require__(15) + ") format('truetype');\n    font-weight: normal;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(3) + ");\n    src: url(" + __webpack_require__(3) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(20) + ") format('woff'),\n         url(" + __webpack_require__(19) + ") format('truetype');\n    font-weight: 600;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(4) + ");\n    src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(22) + ") format('woff'),\n         url(" + __webpack_require__(21) + ") format('truetype');\n    font-weight: 600;\n    font-style: italic;\n}", ""]);
 
 // exports
 
 
 /***/ }),
 /* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-italic.ttf";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-italic.woff";
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-regular.ttf";
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-regular.woff";
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-semibold.ttf";
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-semibold.woff";
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-semibolditalic.ttf";
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-semibolditalic.woff";
+
+/***/ }),
+/* 23 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -7555,7 +7603,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 16 */
+/* 24 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -7564,54 +7612,6 @@ module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-italic.ttf Unexpected character '\u0000' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-italic.woff Unexpected character '\u0000' (1:4)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-regular.ttf Unexpected character '\u0000' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-regular.woff Unexpected character '\u0000' (1:4)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-semibold.ttf Unexpected character '\u0000' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-semibold.woff Unexpected character '\u0000' (1:4)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-semibolditalic.ttf Unexpected character '\u0000' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: /Users/bmcginnis/repo/why-suit/node_modules/reveal.js/lib/font/source-sans-pro/source-sans-pro-semibolditalic.woff Unexpected character '\u0000' (1:4)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
 
 /***/ }),
 /* 25 */

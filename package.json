@@ -1,0 +1,12 @@
+{
+  "name": "why-suit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^0.28.0",
+    "reveal.js": "^3.4.1",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.2"
+  }
+}

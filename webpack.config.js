@@ -8,17 +8,17 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
+          fallback: 'style-loader',
+          use: 'css-loader',
         }),
       },
       {
-          test: /\.(eot|svg|ttf|woff|woff2)$/,
-          use: 'file-loader?name=dist/fonts/[name].[ext]'
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: 'file-loader?name=dist/fonts/[name].[ext]',
       },
-   ],
+      { test: /\.md$/, loader: 'markdown-with-front-matter-loader' },
+      { test: /\.soy$/, loader: 'soy-loader' },
+    ],
   },
-  plugins: [
-       new ExtractTextPlugin('dist/styles.css')
-   ],
+  plugins: [ new ExtractTextPlugin('dist/styles.css') ],
 };

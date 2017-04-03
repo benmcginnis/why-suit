@@ -1,0 +1,31 @@
+{namespace preso}
+
+/**
+ * thank you slide
+ * @param author
+ * @param link
+ * @param article
+ */
+{template .thankYou}
+  <section class="ThankYou">
+    <h3 class="ThankYou-title">{$author}</h3>
+    <a href="{$link}"
+       class="ThankYou-link">
+      {$article}
+    </a>
+  </section>
+{/template}
+
+/**
+ * thankYouList
+ * @param intro
+ * @param list
+ */
+{template .thankYouList autoescape="deprecated-contextual"}
+  <section class="ThankYou-intro">
+    {$intro |noAutoescape}
+  </section>
+  {foreach $ty in $list}
+    {call .thankYou data="$ty" /}
+  {/foreach}
+{/template}

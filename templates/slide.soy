@@ -1,0 +1,10 @@
+{namespace preso}
+/**
+ * slide
+ * @param contents HTML markup
+ */
+{template .slide autoescape="deprecated-contextual"}
+  <section class="Slide">
+    {$contents |noAutoescape}
+  </section>
+{/template}

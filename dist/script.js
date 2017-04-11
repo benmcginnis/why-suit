@@ -63,37 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reveal_js__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reveal_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_reveal_js__);
-__webpack_require__(12);
-__webpack_require__(
-  13,
-);
-
-
-const tyData = __webpack_require__(8);
-const thanks = __webpack_require__(11).thankYouList;
-const slide = __webpack_require__(10).slide;
-
-const data = {
-  contents: thanks({ intro: tyData.__content, list: tyData.thankyous }),
-};
-document.getElementById('js-slides').innerHTML = slide(data);
-
-__WEBPACK_IMPORTED_MODULE_0_reveal_js___default.a.initialize();
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 /*
@@ -3432,7 +3406,7 @@ exports["soydata"] = (soydata);
 exports["soyshim"] = (soyshim);
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/*
@@ -3514,31 +3488,31 @@ function toComment(sourceMap) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15).Buffer))
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-italic.eot";
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-regular.eot";
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-semibold.eot";
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "dist/fonts/source-sans-pro-semibolditalic.eot";
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -3834,13 +3808,13 @@ function updateLink(linkElement, options, obj) {
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = {"order":99,"thankyous":[{"author":"Nicolas Gallagher","link":"http://nicolasgallagher.com/about-html-semantics-front-end-architecture/","article":"About HTML Semantics and Front End Architecture"},{"author":"Andrew Colclough","link":"https://medium.com/objects-in-space/objects-in-space-f6f404727","article":"Objects in Space"},{"author":"Chris Coyier","link":"https://css-tricks.com/opt-in-typography/","article":"Opt-in Typography"},{"author":"Micah Godbolt","link":"https://www.phase2technology.com/blog/used-and-abused-css-inheritance-and-our-misuse-of-the-cascade/","article":"Used and Abused – CSS Inheritance and Our Misuse of the Cascade"},{"author":"Nicole Sullivan","link":"http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/","article":"The Media Object Saves Hundreds of Lines of Code"},{"author":"Harry Roberts","link":"https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/","article":"MindBEMing—getting your head ‘round BEM syntax"},{"author":"Ben Frain","link":"http://ecss.io/chapter6.html","article":"ECSS Chapter 6. Dealing with State"}],"__content":"<h2 id=\"thank-you\">Thank you</h2>\n<p>  This presentation would not be possible without the thought leadership of:</p>\n"}
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -8808,13 +8782,13 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var goog = __webpack_require__(1).goog;
-var soy = __webpack_require__(1).soy;
-var soydata = __webpack_require__(1).soydata;
-var soyshim = __webpack_require__(1).soyshim;
+var goog = __webpack_require__(0).goog;
+var soy = __webpack_require__(0).soy;
+var soydata = __webpack_require__(0).soydata;
+var soyshim = __webpack_require__(0).soyshim;
 var preso;
 // This file was automatically generated from source.soy.
 // Please don't edit this file by hand.
@@ -8843,13 +8817,13 @@ if (goog.DEBUG) {
 module.exports = preso;
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var goog = __webpack_require__(1).goog;
-var soy = __webpack_require__(1).soy;
-var soydata = __webpack_require__(1).soydata;
-var soyshim = __webpack_require__(1).soyshim;
+var goog = __webpack_require__(0).goog;
+var soy = __webpack_require__(0).soy;
+var soydata = __webpack_require__(0).soydata;
+var soyshim = __webpack_require__(0).soyshim;
 var preso;
 // This file was automatically generated from source.soy.
 // Please don't edit this file by hand.
@@ -8900,7 +8874,7 @@ if (goog.DEBUG) {
 module.exports = preso;
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -8909,7 +8883,7 @@ module.exports = preso;
 var content = __webpack_require__(16);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, {});
+var update = __webpack_require__(6)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -8926,7 +8900,7 @@ if(false) {
 }
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -8935,7 +8909,7 @@ if(false) {
 var content = __webpack_require__(17);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, {});
+var update = __webpack_require__(6)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -8950,6 +8924,32 @@ if(false) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reveal_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_reveal_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_reveal_js__);
+__webpack_require__(11);
+__webpack_require__(
+  12,
+);
+
+
+const tyData = __webpack_require__(7);
+const thanks = __webpack_require__(10).thankYouList;
+const slide = __webpack_require__(9).slide;
+
+const data = {
+  contents: thanks({ intro: tyData.__content, list: tyData.thankyous }),
+};
+document.getElementById('js-slides').innerHTML = slide(data);
+
+__WEBPACK_IMPORTED_MODULE_0_reveal_js___default.a.initialize();
+
 
 /***/ }),
 /* 14 */
@@ -10873,7 +10873,7 @@ function isnan (val) {
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)(undefined);
+exports = module.exports = __webpack_require__(1)(undefined);
 // imports
 
 
@@ -10887,7 +10887,7 @@ exports.push([module.i, "/*!\n * reveal.js\n * http://lab.hakim.se/reveal-js\n *
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)(undefined);
+exports = module.exports = __webpack_require__(1)(undefined);
 // imports
 exports.i(__webpack_require__(18), "");
 
@@ -10901,12 +10901,12 @@ exports.push([module.i, "/**\n * White theme for reveal.js. This is the opposite
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)(undefined);
+exports = module.exports = __webpack_require__(1)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(4) + ");\n    src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(22) + ") format('woff'),\n         url(" + __webpack_require__(21) + ") format('truetype');\n    font-weight: normal;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(3) + ");\n    src: url(" + __webpack_require__(3) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(20) + ") format('woff'),\n         url(" + __webpack_require__(19) + ") format('truetype');\n    font-weight: normal;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(5) + ");\n    src: url(" + __webpack_require__(5) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(24) + ") format('woff'),\n         url(" + __webpack_require__(23) + ") format('truetype');\n    font-weight: 600;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(6) + ");\n    src: url(" + __webpack_require__(6) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(26) + ") format('woff'),\n         url(" + __webpack_require__(25) + ") format('truetype');\n    font-weight: 600;\n    font-style: italic;\n}", ""]);
+exports.push([module.i, "@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(3) + ");\n    src: url(" + __webpack_require__(3) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(22) + ") format('woff'),\n         url(" + __webpack_require__(21) + ") format('truetype');\n    font-weight: normal;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(2) + ");\n    src: url(" + __webpack_require__(2) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(20) + ") format('woff'),\n         url(" + __webpack_require__(19) + ") format('truetype');\n    font-weight: normal;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(4) + ");\n    src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(24) + ") format('woff'),\n         url(" + __webpack_require__(23) + ") format('truetype');\n    font-weight: 600;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'Source Sans Pro';\n    src: url(" + __webpack_require__(5) + ");\n    src: url(" + __webpack_require__(5) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(26) + ") format('woff'),\n         url(" + __webpack_require__(25) + ") format('truetype');\n    font-weight: 600;\n    font-style: italic;\n}", ""]);
 
 // exports
 

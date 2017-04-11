@@ -1,6 +1,7 @@
 ---
   order: 99
-  thankyous:
+  template: thanks
+  list:
   - author: Nicolas Gallagher
     link: http://nicolasgallagher.com/about-html-semantics-front-end-architecture/
     article: About HTML Semantics and Front End Architecture

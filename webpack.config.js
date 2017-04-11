@@ -13,6 +13,11 @@ module.exports = {
         }),
       },
       {
+        test: /.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader?presets[]=es2015',
+      },
+      {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: 'file-loader?name=dist/fonts/[name].[ext]',
       },

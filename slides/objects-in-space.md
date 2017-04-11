@@ -2,13 +2,12 @@
   order: 1
 ---
 *The following is stolen liberally from https://medium.com/objects-in-space/objects-in-space-f6f404727*
-*everything below is using the BEM syntax*
 
 # User Needs Beer
 
 ``` scss
-// module/beer.scss
-.beer {
+// module/Beer.scss
+.Beer {
   color:amber;
   display:liquid;
   alcohol:5.2%;
@@ -26,8 +25,8 @@
 ![Photo of bartender with beer]
 
 ``` scss
-// module/cup.scss
-.cup {
+// module/Cup.scss
+.Cup {
   border-radius: 100%;
 }
 ```
@@ -37,46 +36,68 @@
 💡 we need a more specific cup
 
 ``` scss
-// module/cup.scss
-.cup--glass {
-  @extend .cup;
+// module/Cup.scss
+.Cup--glass {
+  @extend .Cup;
   border-color: transparent;
   opacity: .5;
 }
 
-.cup--pint-glass {
-  @extend .cup--glass;
+.Cup--pintGlass {
+  @extend .Cup--glass;
   height: 1pint;
 }
 ```
 
 *Debate: Who should know about how the beer looks in a pint glass? The beer or the pint glass?*
 
-*Opinion: The Pint Glass!*
-
+*Should the cup?*
 ``` scss
-// module/cup.scss
-.cup--glass {
-  @extend .cup;
+// module/Cup.scss
+.Cup--glass {
+  @extend .Cup;
   border-color: transparent;
   opacity: .5;
 }
 
-.cup--pint-glass {
-  @extend .cup--glass;
+.Cup--pintGlass {
+  @extend .Cup--glass;
   height: 1pint;
 }
 
 // it does this whenever it's put inside ANY cup
-.cup__beer {
+.Cup-beer {
   height: 85%;
   head: 10%;
 }
 ```
 
 ``` html
-<div class="cup--pint-glass">
-  <div class="beer cup__beer">
+<div class="Cup--pintGlass">
+  <div class="Beer Cup-beer">
+    ...Dogfish Head 60 Minute...
+  </div>
+</div>
+```
+
+*or the beer?*
+``` scss
+// module/Beer.scss
+.Beer {
+  color: amber;  
+  display:liquid;
+  alcohol:5.2%;
+
+  .Cup & {
+    height: 85%;
+    head: 10%;
+  }
+}
+```
+
+``` html
+<div class="Cup Cup--pintGlass">
+  <div class="Beer">
     ...Dogfish Head 60 Minute...
   </div>
 </div>
@@ -85,9 +106,9 @@
 *Debate: Multi-class or single class?*
 
 ``` html
-<div class="cup cup--pint-glass"></div>
+<div class="Cup Cup-pintGlass"></div>
 /* vs */
-<div class="cup--pint-glass"></div>
+<div class="Cup-pintGlass"></div>
 ```
 
 *States*
@@ -101,28 +122,28 @@
 ```
 
 ``` html
-<div class="beer is-poisoned">
+<div class="Beer is-poisoned">
 </div>
 
-<div class='food is-poisoned'>
+<div class='Food is-poisoned'>
 </div>
 
-<div class="poisonous-potion-of-poisoning is-poisoned">
+<div class="PoisonousPotionOfPoisoning is-poisoned">
 </div>
 ```
 
 *Module specific states*
 ``` scss
-// module/beer.scss
+// module/Beer.scss
 
-.beer
+.Beer
 {
-  &&--is-flat // .beer.beer--is-flat
+  &&--is-flat // .Beer.Beer--is-flat
   {
     head: 0px;
   }
 
-  &&--is-skunked // .beer.beer--is-skunked
+  &&--is-skunked // .Beer.Beer--is-skunked
   {
     taste: heineken;
   }
@@ -130,7 +151,7 @@
 ```
 
 ``` html
-<div class="beer beer--is-skunked">
+<div class="Beer Beer--is-skunked">
   ...gross...
 </div>
 ```

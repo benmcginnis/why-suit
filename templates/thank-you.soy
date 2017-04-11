@@ -18,14 +18,16 @@
 
 /**
  * thankYouList
- * @param intro
+ * @param contents
  * @param list
  */
 {template .thankYouList autoescape="deprecated-contextual"}
-  <section class="ThankYou-intro">
-    {$intro |noAutoescape}
+  <section class="ThankYous">
+    <section class="ThankYou-intro">
+      {$contents |noAutoescape}
+    </section>
+    {foreach $ty in $list}
+      {call .thankYou data="$ty" /}
+    {/foreach}
   </section>
-  {foreach $ty in $list}
-    {call .thankYou data="$ty" /}
-  {/foreach}
 {/template}

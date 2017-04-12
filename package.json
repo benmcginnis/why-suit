@@ -13,6 +13,8 @@
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.0",
+    "headjs": "^1.0.3",
+    "highlightjs": "^9.10.0",
     "markdown-with-front-matter-loader": "^0.1.0",
     "reveal.js": "^3.4.1",
     "soy-loader": "^0.3.0",

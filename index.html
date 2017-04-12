@@ -14,30 +14,30 @@
         </section>
         <section>
           <h2 id="se-man-tics-">Se•man•tics:</h2>
-          <blockquote>
+          <blockquote class="fragment">
             the study of the relationships between signs and symbols and what they represent
           </blockquote>
         </section>
         <section>
           <h2 id="html-semantics">HTML Semantics</h2>
           <ul>
-              <li>This is the semantics of the content
+              <li class="fragment">This is the semantics of the content
                 <strong> e.g. <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, and <code>&lt;section&gt;</code> tags
                 </strong> or <code>role="button"</code> or <code>aria-hidden="true"</code>
               </li>
-              <li>It tells a <em>machine</em> what the content means, e.g. Google or JAWS</li>
+              <li class="fragment">It tells a <em>machine</em> what the content means, e.g. Google or JAWS</li>
           </ul>
         </section>
         <section>
           <h2 id="engineering-semantics">Engineering Semantics</h2>
-          <blockquote>
+          <blockquote class="fragment">
           <p>not all semantics need to be content-derived</p>
           </blockquote>
-          <p>It is important that we as engineers, use application-specific semantics so that other engineers know what the f*@% is going on with our code.</p>
+          <p class="fragment">It is important that we as engineers, use application-specific semantics so that other engineers know what the f*@% is going on with our code.</p>
         </section>
         <section>
           <h2 id="an-example-from-my-past">An example from my past</h2>
-          <pre><code class="lang-html">
+          <pre class="fragment"><code class="html">
 &lt;a class="promotion-button"&gt;
   Shop now
 &lt;/a&gt;
@@ -48,7 +48,7 @@
   Follow us on instagram
 &lt;/a&gt;
           </code></pre>
-          <pre><code class="lang-css">
+          <pre class="fragment"><code class="css">
 .button-primary,
 .cta-button,
 .cta-menu-button,
@@ -61,12 +61,12 @@
         </section>
         <section>
           <p><em>Why the content specific classes?</em></p>
-          <p>(╯°□°）╯︵ ┻━┻</p>
-          <p>Because SMACSS confused me.</p>
+          <p class="fragment">(╯°□°）╯︵ ┻━┻</p>
+          <p class="fragment">Because SMACSS confused me.</p>
         </section>
         <section>
           <h3 id="gallagher-s-reasoning-">Gallagher's Reasoning:</h3>
-          <blockquote>
+          <blockquote class="fragment">
           <p>Content-layer semantics are already served by HTML elements.
           Class names impart little or no useful semantic information to machines.
           The primary purpose of a class name is to be a hook for CSS and JavaScript.
@@ -75,18 +75,18 @@
         </section>
         <section>
           <h2 id="class-names-are-ideally-independent-of-content">Class names are ideally independent of content</h2>
-          <blockquote>
+          <blockquote class="fragment">
           <p>The most reusable components are those with class names that are independent of the content.</p>
           </blockquote>
         </section>
         <section>
           <h2 id="fixing-my-past">Fixing my past</h2>
-          <pre><code class="lang-html">
+          <pre class="fragment"><code class="html">
 &lt;a class="Button--cta"&gt;Shop now&lt;/a&gt;
 &lt;a class="Button--cta"&gt;View Full Menu&lt;/a&gt;
 &lt;a class="Button--cta"&gt;Follow us on instagram&lt;/a&gt;
           </code></pre>
-          <pre><code class="lang-css">
+          <pre class="fragment"><code class="css">
 .Button--cta {
   background-color: #f0ede3;
   color: #b1501e;
@@ -100,7 +100,7 @@
         </section>
         <section>
           <p>Single Class Pattern:</p>
-          <pre><code class="lang-html">
+          <pre><code class="html">
 &lt;style&gt;
   .Heading, .Heading--lead, .Heading--quiet {
     font-family: sans-serif;
@@ -125,7 +125,7 @@
         </section>
         <section>
           <p>Multi Class Pattern:</p>
-          <pre><code class="lang-html">
+          <pre><code class="html">
 &lt;style&gt;
   .Heading {
     font-family: sans-serif;
@@ -157,7 +157,7 @@
         </section>
         <section>
           <h1 id="user-needs-beer">User Needs Beer</h1>
-          <pre><code class="lang-scss">
+          <pre class="fragment"><code class="scss">
 // module/Beer.scss
 .Beer {
   color:amber;
@@ -166,23 +166,23 @@
 }
           </code></pre>
         </section>
-        <section>
-          <p><img src="http://blogs.wickedlocal.com/beernut/files/2011/06/IMG00173-20110604-1341-424x318.jpg" alt="Photo of a puddle of beer"></p>
+        <section data-background-image="http://blogs.wickedlocal.com/beernut/files/2011/06/IMG00173-20110604-1341-424x318.jpg">
+          <!-- <p><img src="" alt="Photo of a puddle of beer"></p> -->
           <p>🤔 it's all over the floor! What's going on?</p>
-          <blockquote>
+          <blockquote class="fragment">
             <p>beer’s properties should not depend on its presentation method</p>
           </blockquote>
 
         </section>
         <section>
           <p><em>Presenting Beer</em></p>
-          <p><img alt="Photo of bartender with beer"
+          <p class="fragment"><img alt="Photo of bartender with beer"
                   src="https://static1.squarespace.com/static/52810817e4b0a82a769586ee/t/56b4fe094d088eb657217413/1454702121371/Bartender+serving+VBC+beer+%281%29.JPG"
                   style="max-height: 50vh;">
               </p>
         </section>
         <section>
-          <pre><code class="lang-scss">
+          <pre><code class="scss">
 // module/Cup.scss
 .Cup {
   border-radius: 100%;
@@ -191,10 +191,10 @@
         </section>
         <section>
           <p>🤔 this doesn't hold much beer...</p>
-          <p>💡 we need a more specific cup</p>
+          <p class="fragment">💡 we need a more specific cup</p>
         </section>
         <section>
-          <pre><code class="lang-scss">
+          <pre><code class="scss">
 // module/Cup.scss
 .Cup--glass {
   @extend .Cup;
@@ -213,7 +213,7 @@
         </section>
         <section>
           <p><em>Should the cup?</em></p>
-          <pre><code class="lang-scss">
+          <pre class="fragment"><code class="scss">
 // module/Cup.scss
 .Cup--glass {
   @extend .Cup;
@@ -232,7 +232,7 @@
   head: 10%;
 }
           </code></pre>
-          <pre><code class="lang-html">
+          <pre class="fragment"><code class="html">
 &lt;div class="Cup--pintGlass"&gt;
   &lt;div class="Beer Cup-beer"&gt;
     ...Dogfish Head 60 Minute...
@@ -242,7 +242,7 @@
         </section>
         <section>
           <p><em>or the beer?</em></p>
-          <pre><code class="lang-scss">
+          <pre class="fragment"><code class="scss">
 // module/Beer.scss
 .Beer {
   color: amber;
@@ -255,7 +255,7 @@
   }
 }
           </code></pre>
-          <pre><code class="lang-html">
+          <pre class="fragment"><code class="html">
 &lt;div class="Cup Cup--pintGlass"&gt;
   &lt;div class="Beer"&gt;
     ...Dogfish Head 60 Minute...
@@ -267,7 +267,7 @@
           <p><em>Question: Multi-class or single class?</em></p>
         </section>
         <section>
-          <pre><code class="lang-html">
+          <pre><code class="html">
 &lt;div class="Cup Cup-pintGlass"&gt;&lt;/div&gt;
 /* vs */
 &lt;div class="Cup-pintGlass"&gt;&lt;/div&gt;
@@ -277,7 +277,7 @@
           <p><em>States</em></p>
         </section>
         <section>
-          <pre><code class="lang-scss">
+          <pre><code class="scss">
 // state/state.scss
 .is-poisoned {
   font-family: 'Comic Sans', sans-serif;
@@ -285,7 +285,7 @@
   color: puse;
 }
           </code></pre>
-          <pre><code class="lang-html">
+          <pre><code class="html">
 &lt;div class="Beer is-poisoned"&gt;
 &lt;/div&gt;
 
@@ -298,7 +298,7 @@
         </section>
         <section>
           <p><em>Module specific states</em></p>
-          <pre><code class="lang-scss">
+          <pre class="fragment"><code class="scss">
 // module/Beer.scss
 .Beer
 {
@@ -313,7 +313,7 @@
   }
 }
           </code></pre>
-          <pre><code class="lang-html">
+          <pre class="fragment"><code class="html">
 &lt;div class="Beer Beer--is-skunked"&gt;
   ...gross...
 &lt;/div&gt;
@@ -326,16 +326,16 @@
         </section>
       </section>
       <section>
-        <section>
+        <section data-background-image="/dist/images/naming-is-hard.jpg">
           <h1 id="naming-is-hard-">Naming is hard!</h1>
-          <p><img src="/dist/images/naming-is-hard.jpg" alt="mad baby"></p>
+          <!-- <p><img src="" alt="mad baby"></p> -->
         </section>
         <section>
           <h2 id="a-suggested-convention">A suggested convention</h2>
-          <p>from <a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">Nicholas Gallagher</a> and based on <a href="http://getbem.com/introduction/">BEM</a></p>
+          <p class="fragment">from <a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">Nicholas Gallagher</a> and based on <a href="http://getbem.com/introduction/">BEM</a></p>
         </section>
         <section>
-          <pre><code class="lang-scss">
+          <pre><code class="scss">
 // corresponding files
 // sass/modules/ComponentName.scss
 // js/modules/ComponentName.js
@@ -360,13 +360,13 @@
         <section>
           <h2 id="but-why-">But why?</h2>
           <ul>
-          <li>Easily know from the inspector, where to go for <em>all the things</em></li>
-          <li>Clear separation between the Module and the children</li>
-          <li>Naming mostly independent of HTML structure</li>
-          <li>Modules/Components are never dependent on other elements on a page, so you will never experience cascade problems</li>
-          <li>Easy to understand what's going on</li>
-          <li>Compose-ability</li>
-          <li>
+          <li class="fragment">Easily know from the inspector, where to go for <em>all the things</em></li>
+          <li class="fragment">Clear separation between the Module and the children</li>
+          <li class="fragment">Naming mostly independent of HTML structure</li>
+          <li class="fragment">Modules/Components are never dependent on other elements on a page, so you will never experience cascade problems</li>
+          <li class="fragment">Easy to understand what's going on</li>
+          <li class="fragment">Compose-ability</li>
+          <li class="fragment">
             Generally less typing: <code>.c-LocationHours-interval</code> vs. <code>.c-location-hours-day-row-intervals-instance</code>
           </li>
           </ul>
@@ -384,7 +384,7 @@
         </section>
         <section>
           <h3 id="bootstrap-">Bootstrap:</h3>
-          <pre><code class="lang-css">
+          <pre><code class="css">
 .expanded {display: inline;}
 .closed {display: none; }
 .collapsed .expanded { display: none;}
@@ -393,7 +393,7 @@
           </code></pre>
         </section>
         <section>
-          <pre><code class="lang-html">
+          <pre><code class="html">
 &lt;button class="btn collapsed" data-toggle="collapse" data-target="#target"&gt;
   &lt;span class="expanded"&gt;Close me&lt;/span&gt;
   &lt;span class="closed"&gt;Open Me&lt;/span&gt;
@@ -404,7 +404,7 @@
           </code></pre>
         </section>
         <section>
-          <pre><code class="lang-js">
+          <pre><code class="js">
 for (let collapser of document.querySelectorAll('[data-toggle="collapse"]')) {
   collapser.addEventListener( () =&gt; {
     document.querySelector(collapser.dataset.target).classList.toggle('collapse');
@@ -414,12 +414,12 @@ for (let collapser of document.querySelectorAll('[data-toggle="collapse"]')) {
         </section>
         <section>
           <h3 id="aria">Aria</h3>
-          <pre><code class="lang-css">
+          <pre><code class="css">
 [aria-hidden="true"] {display: none;}
           </code></pre>
         </section>
         <section>
-          <pre><code class="lang-html">
+          <pre><code class="html">
 &lt;button class="Collapser" aria-expanded="false" aria-controls="target-aria" aria-live="polite"&gt;
    ARIA
   &lt;span class="Collapser-toggleOpen"
@@ -439,7 +439,7 @@ for (let collapser of document.querySelectorAll('[data-toggle="collapse"]')) {
           </code></pre>
         </section>
         <section>
-          <pre><code class="lang-js">
+          <pre><code class="js">
 for (let collapser of document.querySelectorAll('.Collapser')) {
   const target = document.getElementById(collapser.getAttribute('aria-controls'));
   const toggleOpen = collapser.querySelector('.Collapser-toggleOpen');

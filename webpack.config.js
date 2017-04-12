@@ -20,14 +20,17 @@ module.exports = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        use: 'file-loader?name=dist/fonts/[name].[ext]',
+        loader: 'file-loader',
+        query: {
+          name:'/dist/fonts/[name].[ext]'
+        }
       },
       { test: /\.md$/, loader: 'markdown-with-front-matter-loader' },
       { test: /\.soy$/, loader: 'soy-loader' },
     ],
   },
   plugins: [
-    new ExtractTextPlugin('dist/styles.css'),
+    new ExtractTextPlugin({filename: './dist/styles.css', allChunks: true, publicPath: '/dist/'}),
     new CopyWebpackPlugin([{from: 'images/', to: 'dist/images/'}]),
    ],
 };

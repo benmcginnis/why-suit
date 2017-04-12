@@ -25,5 +25,5 @@
     article: ECSS Chapter 6. Dealing with State
 ---
 
-  ## Thank you
-  This presentation would not be possible without the thought leadership of:
+## Thank you
+This presentation would not be possible without the thought leadership of:

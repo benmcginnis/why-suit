@@ -2,9 +2,17 @@
 /**
  * slide
  * @param contents HTML markup
+ * @param? sections HTML markup
  */
 {template .slide autoescape="deprecated-contextual"}
-  <section class="Slide">
-    {$contents |noAutoescape}
+  <section>
+    <section class="Slide">
+      {$contents |noAutoescape}
+    </section>
+    {foreach $section in $sections ?: []}
+      <section>
+        {$section |noAutoescape}
+      </section>
+    {/foreach}
   </section>
 {/template}
